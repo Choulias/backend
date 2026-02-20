@@ -5,7 +5,9 @@ import { AppDataSource } from "./data-source"
 import {AdminRoutes, AuthRoute, Routes} from "./routes"
 import * as cors from "cors";
 import {AuthGuard} from "./guard/AuthGuard";
+import * as dotenv from "dotenv"
 
+dotenv.config()
 
 AppDataSource.initialize().then(async () => {
 
